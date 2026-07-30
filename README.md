@@ -50,18 +50,21 @@ Se não quiser esperar o treinamento, baixe o modelo já treinado:
 Depois, em seu terminal, com o modelo já instalado:
  
 ```bash
-# Clone o repositório
+# Clone o repositório para sua máquina
 git clone https://github.com/MiguelReisB/MoodClassifier
 cd MoodClassifier
- 
-# Cria e ativa o ambiente virtual
-python3 -m venv venv
-source venv/bin/activate        # Linux/Mac
 ```
 ```bash
+# Cria e ativa o ambiente virtual no Linux/Mac
 python3 -m venv venv
-venv\Scripts\activate         # Windows (PowerShell)
+source venv/bin/activate
 ```
+```bash
+ # Cria e ativa o ambiente virtual no Windows
+python3 -m venv venv
+venv\Scripts\activate        
+```
+> Decisão de usar ambiente virtual para que você não precise instalar as dependências diretamente no PC ;)
 ```bash
 # Instale as dependências
 pip install scikit-learn
