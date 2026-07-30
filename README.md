@@ -49,8 +49,8 @@ Depois, em seu terminal, com o modelo já instalado:
  
 ```bash
 # Clone o repositório
-git clone https://github.com/MiguelReisB/NOME_DO_REPOSITORIO
-cd NOME_DO_REPOSITORIO
+git clone https://github.com/MiguelReisB/MoodClassifier
+cd MoodClassifier
  
 # Cria e ativa o ambiente virtual
 python3 -m venv venv
