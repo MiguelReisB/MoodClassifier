@@ -9,13 +9,15 @@ Projeto acadêmico desenvolvido para a disciplina de **Exploração Digital e Fu
 O modelo foi treinado com o dataset **Sentiment140**, contendo 1,6 milhão de tweets em inglês previamente rotulados. O pipeline de classificação consiste em:
 
 1. **Limpeza do texto** — remoção de links, menções e padronização
-2. **Vetorização TF-IDF** — conversão do texto em representação numérica, considerando unigramas, bigramas e trigramas (até 100 mil termos)
+2. **Vetorização TF-IDF** — conversão do texto em representação numérica, considerando unigramas, bigramas e trigramas, além de salvar até 100 mil termos
 3. **Regressão Logística** — algoritmo de classificação que aprende o "peso emocional" de cada termo
 
 O modelo atingiu aproximadamente **82% de acurácia** nos dados de teste (320 mil comentários reservados para validação);
 Para melhor visualização, segue abaixo a matriz de confusão do MoodClassifier:
 
-![Matriz de Confusão (HeatMap)](asset/matrizDeConfusao.png){fig.align='center'}   
+<p align="center">
+ <img src="asset/matrizDeConfusao.png" alt="Matriz de Confusão">
+</p>
 
 ---
 
@@ -31,9 +33,9 @@ Para melhor visualização, segue abaixo a matriz de confusão do MoodClassifier
 
 ## ▶️ Como testar
 
-### Opção 1 — Rodar no Google Colab (recomendado)
+### Opção 1 — Rodar no Google Colab (recomendado, pra não gastar poder computacional da sua máquina)
 
-Abra o notebook diretamente no Colab, execute todas as células em ordem e use o campo de input ao final para digitar comentários:
+Abra o notebook diretamente no Colab (o arquivo Classificador_de_Comentario.ipynb), execute todas as células em ordem e use o campo de input ao final para digitar comentários:
 
 > ⚠️ O treinamento leva entre 2 a 4 minutos no Colab.
 
@@ -41,12 +43,9 @@ Abra o notebook diretamente no Colab, execute todas as células em ordem e use o
 
 Se não quiser esperar o treinamento, baixe o modelo já treinado:
 
-📥 **[Download do modelo (modelo_sentimentos.pkl) — Google Drive](COLE_O_LINK_AQUI)**
+📥 **[Download do modelo (modelo_sentimentos.pkl) — Google Drive](https://drive.google.com/uc?export=download&id=1LlCJ54vKPd9qrUKI0CK64KMSnywQ7NJI)**
 
-Depois, com o Python instalado:
-
-
-Depois, com o Python instalado:
+Depois, em seu terminal, com o modelo já instalado:
  
 ```bash
 # Clone o repositório
@@ -66,10 +65,10 @@ venv\Scripts\activate         # Windows (PowerShell)
 pip install scikit-learn
  
 # Coloque o arquivo modelo_sentimentos.pkl nesta mesma pasta
-# e execute:
+# logo após, execute:
 python classificar.py
 ```
  
 > Toda vez que abrir um terminal novo, ative o ambiente antes com `source venv/bin/activate` (Linux/Mac) ou `venv\Scripts\activate` (Windows). Para sair, digite `deactivate`.
 
-https://drive.google.com/file/d/1LlCJ54vKPd9qrUKI0CK64KMSnywQ7NJI/view?usp=sharing
+
