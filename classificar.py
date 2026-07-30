@@ -21,15 +21,15 @@ print("=======================================================")
 
 while True:
     print("\n-------------------------------------------------------")
-    frase = input(" Comentário: ")
+    frase = input("Digite um comentário (em inglês): ")
 
     if frase.lower() in ("sair", "exit"):
         break
 
     resultado = modelo.predict([frase])[0]
-    sentimento = "Positivo 😊" if resultado == 1 else "Negativo 😞"
+    sentimento = "Este foi um comentário Positivo" if resultado == 1 else "Este foi um comentário Negativo"
 
-    print(f"\n Sentimento: {sentimento}")
+    print(f"\n Classificação do MoodClassifier: {sentimento}")
     print("-------------------------------------------------------")
 
 print("\n=======================================================")
