@@ -1,12 +1,12 @@
 # 💬 Classificador de Sentimentos em Comentários
 
-Projeto acadêmico desenvolvido para a disciplina de **Exploração Digital e Fundamentos Tecnológicos** do período passado da faculdade, com o objetivo de construir um modelo de Machine Learning capaz de classificar automaticamente o sentimento de comentários em inglês como **positivo** ou **negativo**.
+Projeto acadêmico desenvolvido para a disciplina de **Exploração Digital e Fundamentos Tecnológicos** da faculdade, com o objetivo de construir um modelo de Machine Learning capaz de classificar automaticamente o sentimento de comentários em inglês como **positivo** ou **negativo**.
 
 ---
 
 ## 📋 Sobre o projeto
 
-O modelo foi treinado com o dataset **Sentiment140**, contendo 1,6 milhão de tweets em inglês previamente rotulados. O pipeline de classificação consiste em:
+O modelo foi treinado com o dataset **Sentiment140**, contendo 1,6 milhão de tweets em inglês previamente rotulados em negativo ou positivo. O pipeline de classificação consiste em:
 
 1. **Limpeza do texto** — remoção de links, menções e padronização
 2. **Vetorização TF-IDF** — conversão do texto em representação numérica, considerando unigramas, bigramas e trigramas, além de salvar até 100 mil termos
@@ -33,9 +33,11 @@ Para melhor visualização, segue abaixo a matriz de confusão do MoodClassifier
 
 ## ▶️ Como testar
 
-### Opção 1 — Rodar no Google Colab (recomendado, pra não gastar poder computacional da sua máquina)
+> ⚠️ Ressalto que os comentários precisam ser em inglês
 
-Abra o notebook diretamente no Colab (o arquivo Classificador_de_Comentario.ipynb), execute todas as células em ordem e use o campo de input ao final para digitar comentários:
+### Opção 1 — Rodar no Google Colab (recomendado)
+
+Abra o notebook diretamente no Colab (o arquivo Classificador_de_Comentario.ipynb), execute todas as células em ordem e use o campo de input ao final para digitar comentários.
 
 > ⚠️ O treinamento leva entre 2 a 4 minutos no Colab.
 
@@ -71,4 +73,7 @@ python classificar.py
  
 > Toda vez que abrir um terminal novo, ative o ambiente antes com `source venv/bin/activate` (Linux/Mac) ou `venv\Scripts\activate` (Windows). Para sair, digite `deactivate`.
 
+### Uma breve observação:
+Ao testar, veja que ela pode cometer erros - Ela não compreende perfeitamente: ironia, sarcasmo, duplo sentido, construções semanticamente pouco explícitas.
 
+*Inteligência Artificial desenvolvida exclusivamente para fins acadêmicos, nenhuma decisão deve ser tomada com base em seus resultados sem antes realizar uma análise profunda e levar em consideração princípios éticos e legais.*
