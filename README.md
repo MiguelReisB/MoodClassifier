@@ -1,3 +1,7 @@
+<p align="center">
+ <img src="asset/PreviewMoodClassifier.gif" alt="Preview do modelo em ação">
+</p>
+
 # 💬 Classificador de Sentimentos em Comentários
 
 Projeto acadêmico desenvolvido para a disciplina de **Exploração Digital e Fundamentos Tecnológicos** da faculdade, com o objetivo de construir um modelo de Machine Learning capaz de classificar automaticamente o sentimento de comentários em inglês como **positivo** ou **negativo**.
@@ -64,17 +68,38 @@ source venv/bin/activate
 python3 -m venv venv
 venv\Scripts\activate        
 ```
-> Decisão de usar ambiente virtual para que você não precise instalar as dependências diretamente no PC ;)
+> Decisão de usar ambiente virtual para que você não precise instalar as dependências diretamente no PC, mas na pasta venv/ ;)
 ```bash
 # Instale as dependências
 pip install scikit-learn
  
 # Coloque o arquivo modelo_sentimentos.pkl nesta mesma pasta
+```
+```bash
 # logo após, execute:
 python classificar.py
 ```
  
 > Toda vez que abrir um terminal novo, ative o ambiente antes com `source venv/bin/activate` (Linux/Mac) ou `venv\Scripts\activate` (Windows). Para sair, digite `deactivate`.
+
+## Frases para você testar
+
+Frases com o sentimento bem definido:
+
+- I absolutely loved this movie!
+- This product is amazing, totally worth it.
+- I hate this service, it was terrible.
+- Worst purchase I've ever made.
+
+Sentimento um pouco mascarado:
+
+- Well… that could have gone better.
+- It's not bad, I guess.
+- I expected more from this.
+- Could be worse.
+- It works... somehow.
+
+---
 
 ### Uma breve observação:
 Ao testar, veja que ela pode cometer erros - Ela não compreende perfeitamente: ironia, sarcasmo, duplo sentido, construções semanticamente pouco explícitas.
