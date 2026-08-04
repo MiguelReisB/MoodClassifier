@@ -53,30 +53,29 @@ Se não quiser esperar o treinamento, baixe o modelo já treinado:
 
 Depois, em seu terminal, com o modelo já instalado:
  
+* Clone o repositório para sua máquina:
 ```bash
-# Clone o repositório para sua máquina
 git clone https://github.com/MiguelReisB/MoodClassifier
 cd MoodClassifier
 ```
+* Para criar e ativar o ambiente virtual no Linux/Mac:
 ```bash
-# Cria e ativa o ambiente virtual no Linux/Mac
 python3 -m venv venv
 source venv/bin/activate
 ```
+* Para criar e ativar o ambiente virtual no Windows:
 ```bash
- # Cria e ativa o ambiente virtual no Windows
 python3 -m venv venv
 venv\Scripts\activate        
 ```
 > Decisão de usar ambiente virtual para que você não precise instalar as dependências diretamente no PC, mas na pasta venv/ ;)
+* Instale as dependências:
 ```bash
-# Instale as dependências
 pip install scikit-learn
- 
-# Coloque o arquivo modelo_sentimentos.pkl nesta mesma pasta
 ```
+#### Lembre-se de colocar o arquivo modelo_sentimentos.pkl nesta mesma pasta
+* logo após, execute:
 ```bash
-# logo após, execute:
 python classificar.py
 ```
  
@@ -91,7 +90,7 @@ Frases com o sentimento bem definido:
 - I hate this service, it was terrible.
 - Worst purchase I've ever made.
 
-Sentimento um pouco mascarado:
+Frases com o sentimento um pouco mascarado:
 
 - Well… that could have gone better.
 - It's not bad, I guess.
