@@ -41,7 +41,7 @@ Para melhor visualização, segue abaixo a matriz de confusão do MoodClassifier
 
 ### Opção 1 — Rodar no Google Colab (recomendado)
 
-Abra o notebook diretamente no Colab (o arquivo Classificador_de_Comentario.ipynb), execute todas as células em ordem e use o campo de input ao final para digitar comentários.
+Abra o notebook diretamente no Colab (o arquivo Classificador_de_Comentarios.ipynb), execute todas as células em ordem e use o campo de input ao final para digitar comentários.
 
 > ⚠️ O treinamento leva entre 2 a 4 minutos no Colab.
 
